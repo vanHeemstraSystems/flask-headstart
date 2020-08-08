@@ -20,6 +20,11 @@ Because the version Python 3.6+ is not yet installed, we have to install it.
 
 Follow the instructions from [How to Install Python 3.6.4 on CentOS 7](https://www.rosehosting.com/blog/how-to-install-python-3-6-4-on-centos-7/)
 
+```
+[cloud_user@wvanheemstra2c ~]$ python3 --version
+Python 3.6.8
+```
+
 ## 102 Install virtualenv
 
 
