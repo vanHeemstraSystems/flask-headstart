@@ -30,6 +30,7 @@ To Code we will be using Visual Studio Code. First we need to open the Graphical
 Install Visual Studio Code using the Google Chrome Web Browser, by browsing to https://code.visualstudio.com/download
 Follow the instructions on the webiste to download and install Visual Studio Code, see [How to Install RPM File on CentOs Linux](https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux).
 
+NOTE: You have to shutdown and restart the Graphical Shell to see the Visual Studio Code icon under Applications > Programming.
 
 ## 102 Install virtualenv
 
