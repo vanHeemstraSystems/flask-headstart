@@ -88,6 +88,21 @@ Now is a good time to commit your changes back to the renmote repository:
 
 ```
 git status
+```
+Create and add the following lines to .gitignore (if the file does not already exist):
+
+```
+touch .gitignore
+vi .gitignore
+```
+
+```
+__pycache__/
+```
+
+Now add all new files and changes, if any:
+
+```
 git add all
 git commit -m "Add env folder"
 git push
