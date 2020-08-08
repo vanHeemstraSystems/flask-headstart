@@ -18,9 +18,7 @@ Python 2.7.5
 
 Because the version Python 3.6+ is not yet installed, we have to install it.
 
-Download the lastest version of Python 3 from the website [Python](https://www.python.org)
-
-Here: [Latest Python 3 Release - Python 3.8.5](https://www.python.org/downloads/source/)
+Follow the instructions from [How to Install Python 3.6.4 on CentOS 7](https://www.rosehosting.com/blog/how-to-install-python-3-6-4-on-centos-7/)
 
 ## 102 Install virtualenv
 
