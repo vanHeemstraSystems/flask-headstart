@@ -34,6 +34,13 @@ NOTE: You have to shutdown and restart the Graphical Shell to see the Visual Stu
 
 Install Git on your CentOs 7 Server, following the instructions at [How to install Git on CentOs 7](https://linuxize.com/post/how-to-install-git-on-centos-7/)
 
+Check if Git is installed, by asking for its version:
+
+```
+[cloud_user@wvanheemstra2c git]$ git --version
+git version 2.22.0
+```
+
 In your terminal create a directory called "git' inside your home directory and clone this repository in there:
 
 ```
