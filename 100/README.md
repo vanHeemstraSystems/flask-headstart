@@ -103,7 +103,8 @@ __pycache__/
 Now add all new files and changes, if any:
 
 ```
-git add all
+git add .gitignore
+git add *
 git commit -m "Add env folder"
 git push
 ```
