@@ -28,7 +28,8 @@ Python 3.6.8
 To Code we will be using Visual Studio Code. First we need to open the Graphical Shell of our Linux CentOs7 Server and install the Google Chrome Browser, following these instructions at [How to Install Google Chrome Web Browser on CentOS 7](https://linuxize.com/post/how-to-install-google-chrome-web-browser-on-centos-7/).
 
 Install Visual Studio Code using the Google Chrome Web Browser, by browsing to https://code.visualstudio.com/download
-Follow the instructions on the webiste to download and install Visual Studio Code.
+Follow the instructions on the webiste to download and install Visual Studio Code, see [How to Install RPM File on CentOs Linux](https://phoenixnap.com/kb/how-to-install-rpm-file-centos-linux).
+
 
 ## 102 Install virtualenv
 
