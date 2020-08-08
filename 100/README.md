@@ -67,8 +67,21 @@ pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 
 ## 103 Create our Project Directory
 
+We are working in the Workspace folder, inside the cloned repsoitory "flask-headstart".
 
 ## 104 Create Virtual Environment
 
+In the terminal in Visual Studio Code, inside the repository root directory, type the following to crete a virtual environment (named 'env' which is a convention):
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ virtualenv env
+```
+
+A new folder will have been created, called 'env", in the root directory of your repository:
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ ls
+100  200  300  400  500  600  env  README.md
+```
 
 ## 105 Install Required Packages
