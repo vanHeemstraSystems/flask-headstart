@@ -105,7 +105,7 @@ Now add all new files and changes, if any:
 ```
 git add .gitignore
 git add *
-git commit -m "Add env folder"
+git commit -m "Add env folder and .gitignore"
 git push
 ```
 
