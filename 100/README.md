@@ -119,3 +119,9 @@ Now we have to activate the environment, by typing:
 You will see at the start of your command line '(env)' indicating you are inside the virtual environment.
 
 ## 105 Install Required Packages
+
+Having activated the environment (see end of previous section), install the required packages as follows:
+
+```
+(env) [cloud_user@wvanheemstra2c flask-headstart]$ pip3 install flask flask-sqlalchemy
+```
