@@ -53,6 +53,12 @@ In Visual Studio Code, set your Workspace Folder to the cloned repository "flask
 
 ## 102 Install virtualenv
 
+In Visual Studio Code, inside your Workspace Folder "flask-headstart" open a terminal and run the following instruction:
+
+```
+pip3 install virtualenv
+```
+
 
 ## 103 Create our Project Directory
 
