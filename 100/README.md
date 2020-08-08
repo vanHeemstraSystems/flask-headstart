@@ -49,15 +49,73 @@ $home/cloud_user/ cd git
 $home/cloud_user/git/ git clone https://github.com/vanHeemstraSystems/flask-headstart.git
 ```
 
-In Visual Studio Code, set your Working Directory to the cloned repository "flask-headstart".
+In Visual Studio Code, set your Workspace Folder to the cloned repository "flask-headstart".
 
 ## 102 Install virtualenv
 
+In Visual Studio Code, inside your Workspace Folder "flask-headstart" open a terminal and run the following instruction (for Python 3):
+
+```
+pip3 install virtualenv
+```
+To check the version of PIP (for Python 3) run:
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ pip3 --version
+pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+```
 
 ## 103 Create our Project Directory
 
+We are working in the Workspace folder, inside the cloned repsoitory "flask-headstart".
 
 ## 104 Create Virtual Environment
 
+If the folder 'env' does not yet exist in the root directory, in the terminal in Visual Studio Code, inside the repository root directory, type the following to create a virtual environment (named 'env' which is a convention):
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ virtualenv env
+```
+
+A new folder will have been created, called 'env", in the root directory of your repository:
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ ls
+100  200  300  400  500  600  env  README.md
+```
+
+Now is a good time to commit your changes back to the renmote repository:
+
+```
+git status
+```
+Create and add the following lines to .gitignore (if the file does not already exist):
+
+```
+touch .gitignore
+vi .gitignore
+```
+
+```
+__pycache__/
+```
+
+Now add all new files and changes, if any:
+
+```
+git add .gitignore
+git add *
+git commit -m "Add env folder and .gitignore"
+git push
+```
+
+Now we have to activate the environment, by typing:
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
+(env) [cloud_user@wvanheemstra2c flask-headstart]$ 
+```
+
+You will see at the start of your command line '(env)' indicating you are inside the virtual environment.
 
 ## 105 Install Required Packages
