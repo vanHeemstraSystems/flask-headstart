@@ -4,3 +4,15 @@
 
 In Visual Studio Code, create a new file called '*app.py*' in the root directory of 'flask-headstart' if it is not already there.
 
+``` 
+ touch app.py
+```
+
+Now add the following code to '*app.py*':
+
+```
+
+
+```
+
+
