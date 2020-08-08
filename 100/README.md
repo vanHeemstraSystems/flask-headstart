@@ -12,7 +12,7 @@
 ## 103 Create our Project Directory
 
 
-## 104 Create our Environment
+## 104 Create Virtual Environment
 
 
 ## 105 Install Required Packages
