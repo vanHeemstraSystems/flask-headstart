@@ -20,7 +20,7 @@ See also [README.md](./200/README.md)
 
 See also [README.md](./300/README.md)
 
-## 400 Setting Up and using Database (SQLite)
+## 400 Setting Up and Using Database (SQLite)
 
 See also [README.md](./400/README.md)
 
