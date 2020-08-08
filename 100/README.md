@@ -84,10 +84,22 @@ A new folder will have been created, called 'env", in the root directory of your
 100  200  300  400  500  600  env  README.md
 ```
 
+Now is a good time to commit your changes back to the renmote repository:
+
+```
+git status
+git add all
+git commit -m "Add env folder"
+git push
+```
+
 Now we have to activate the environment, by typing:
 
 ```
 [cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
+(env) [cloud_user@wvanheemstra2c flask-headstart]$ 
 ```
+
+You will see at the start of your command line '(env)' indicating you are inside the virtual environment.
 
 ## 105 Install Required Packages
