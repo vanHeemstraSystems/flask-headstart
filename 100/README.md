@@ -32,6 +32,8 @@ Follow the instructions on the webiste to download and install Visual Studio Cod
 
 NOTE: You have to shutdown and restart the Graphical Shell to see the Visual Studio Code icon under Applications > Programming.
 
+Install Git on your CentOs 7 Server, following the instructions at [How to install Git on CentOs 7](https://linuxize.com/post/how-to-install-git-on-centos-7/)
+
 In your terminal create a directory called "git' inside your home directory and clone this repository in there:
 
 ```
