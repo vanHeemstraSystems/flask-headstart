@@ -32,6 +32,16 @@ Follow the instructions on the webiste to download and install Visual Studio Cod
 
 NOTE: You have to shutdown and restart the Graphical Shell to see the Visual Studio Code icon under Applications > Programming.
 
+In your terminal create a directory called "git' inside your home directory and clone this repository in there:
+
+```
+$home/cloud_user/ mkdir git
+$home/cloud_user/ cd git
+$home/cloud_user/git/ git clone https://github.com/vanHeemstraSystems/flask-headstart.git
+```
+
+In Visual Studio Code, set your Working Directory to the cloned repository "flask-headstart".
+
 ## 102 Install virtualenv
 
 
