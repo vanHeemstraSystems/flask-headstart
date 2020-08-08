@@ -71,7 +71,7 @@ We are working in the Workspace folder, inside the cloned repsoitory "flask-head
 
 ## 104 Create Virtual Environment
 
-In the terminal in Visual Studio Code, inside the repository root directory, type the following to crete a virtual environment (named 'env' which is a convention):
+If the folder 'env' does not yet exist in the root directory, in the terminal in Visual Studio Code, inside the repository root directory, type the following to create a virtual environment (named 'env' which is a convention):
 
 ```
 [cloud_user@wvanheemstra2c flask-headstart]$ virtualenv env
@@ -82,6 +82,12 @@ A new folder will have been created, called 'env", in the root directory of your
 ```
 [cloud_user@wvanheemstra2c flask-headstart]$ ls
 100  200  300  400  500  600  env  README.md
+```
+
+Now we have to activate the environment, by typing:
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
 ```
 
 ## 105 Install Required Packages
