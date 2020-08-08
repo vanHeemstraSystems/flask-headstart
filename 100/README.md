@@ -20,7 +20,7 @@ Because the version Python 3.6+ is not yet installed, we have to install it.
 
 Download the lastest version of Python 3 from the website [Python](https://www.python.org)
 
-
+Here: [Latest Python 3 Release - Python 3.8.5](https://www.python.org/downloads/source/)
 
 ## 102 Install virtualenv
 
