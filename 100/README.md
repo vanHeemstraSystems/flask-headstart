@@ -49,7 +49,7 @@ $home/cloud_user/ cd git
 $home/cloud_user/git/ git clone https://github.com/vanHeemstraSystems/flask-headstart.git
 ```
 
-In Visual Studio Code, set your Working Directory to the cloned repository "flask-headstart".
+In Visual Studio Code, set your Workspace Folder to the cloned repository "flask-headstart".
 
 ## 102 Install virtualenv
 
