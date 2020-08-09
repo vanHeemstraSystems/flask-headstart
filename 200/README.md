@@ -23,5 +23,11 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
+Try the basic app.py as follows.
 
+From a terminal, run the following command:
+
+```
+
+```
 
