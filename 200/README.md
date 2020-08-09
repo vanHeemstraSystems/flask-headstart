@@ -13,6 +13,7 @@ Now add the following code to '*app.py*':
 ```
 from flask import Flask
 
+app = Flask(__name__)
 
 ```
 
