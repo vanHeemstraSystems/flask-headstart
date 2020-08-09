@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
 Try the basic app.py as follows.
 
-From a terminal, run the following command:
+From a terminal, run the following command from the root directory:
 
 ```
 [cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
