@@ -28,6 +28,7 @@ Try the basic app.py as follows.
 From a terminal, run the following command:
 
 ```
-
+[cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
+(env) [cloud_user@wvanheemstra2c flask-headstart]$  python3 
 ```
 
