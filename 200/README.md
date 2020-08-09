@@ -29,6 +29,17 @@ From a terminal, run the following command from the root directory:
 
 ```
 [cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
-(env) [cloud_user@wvanheemstra2c flask-headstart]$  python3 
+(env) [cloud_user@wvanheemstra2c flask-headstart]$  python3 app.py
 ```
+
+This will start the local web server, listening on port 5000.
+
+Open a browser and go to http://localhost:5000
+
+You should see the following text on the web page:
+
+```
+Hello, World!
+```
+
 
