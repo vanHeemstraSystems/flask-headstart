@@ -2,6 +2,7 @@
 
 # 300 Templates and Static Content
 
+We are using ***Jinja2*** templating syntax, see also https://jinja.palletsprojects.com/en/2.11.x/templates/
 
 Video at 08:56 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
@@ -138,4 +139,82 @@ To make use of the template engine placeholders, update the 'templates/index.htm
 {% endblock %}
 ```
 
+## Static Content
 
+Video at 13:00 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+Inside the 'static' folder, create a subfolder called 'css':
+
+```
+cd static
+mkdir css
+```
+
+Inside the newly created folder 'css' create a file called 'main.css':
+
+```
+cd css
+touch main.css
+```
+
+Now add the following to 'main.css' for styling purposes
+
+```
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+```
+
+To add the reference to the main.css in the base.html, update the base.html as follows:
+
+```
+...
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% block head %}{% endblock %}
+    </head>
+...
+```
+
+Also import the 'url_for' in app.py:
+
+```
+from flask import Flask, render_template, url_for
+...
+```
+
+Now refreshing your web page, the font of the text in the body will have become 'sans-serif', as specified in main.css.
+
+
+Lets try the same for JavaScript, so create a new folder inside 'static', called 'js':
+
+```
+cd static
+mkdir js
+```
+
+Add a main.js file inside the newly created folder 'javascript':
+
+```
+cd js
+touch main.js
+```
+
+And link to the main.js from the base.html as follows:
+
+```
+...
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="javascript" href="{{ url_for('static', filename='js/main.js') }}">
+        {% block head %}{% endblock %}
+    </head>
+...
+```
