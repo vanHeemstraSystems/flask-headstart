@@ -62,19 +62,19 @@ Update 'templates/index.html' as follows:
 </html>
 ```
 
-Activate the virtual environment as follows:
+Activate the virtual environment as follows, unless it was already activated:
 
 ```
 [cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
 ```
 
-Then start the application:
+Then start the application, unless it was already started, as it will update the page automatically:
 
 ```
 (env) [cloud_user@wvanheemstra2c flask-headstart]$ python3 app.py
 ```
 
-When you open your browser at localhost:5000 you should see:
+When you open your browser (and refresh) at localhost:5000 you should see:
 
 ```
 Hello, World! 2
