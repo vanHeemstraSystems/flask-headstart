@@ -190,3 +190,31 @@ from flask import Flask, render_template, url_for
 Now refreshing your web page, the font of the text in the body will have become 'sans-serif', as specified in main.css.
 
 
+Lets try the same for JavaScript, so create a new folder inside 'static', called 'js':
+
+```
+cd static
+mkdir js
+```
+
+Add a main.js file inside the newly created folder 'javascript':
+
+```
+cd js
+touch main.js
+```
+
+And link to the main.js from the base.html as follows:
+
+```
+...
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="javascript" href="{{ url_for('static', filename='js/main.js') }}">
+        {% block head %}{% endblock %}
+    </head>
+...
+```
