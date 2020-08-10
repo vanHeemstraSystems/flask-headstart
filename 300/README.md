@@ -2,6 +2,9 @@
 
 # 300 Templates and Static Content
 
+
+Video at 08:56 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
 Create the following folder in the root of the repository for our static content:
 
 ```
