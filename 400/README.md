@@ -21,7 +21,9 @@ In addition, add the database settings to app.py as follows:
 app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite:///test.db' # relative path
 db = SQLAlchemy(app)
 ...
-# databse model
+# database model
+class Todo(db.Model):
+
 
 ...
 ```
