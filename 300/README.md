@@ -2,7 +2,7 @@
 
 # 300 Templates and Static Content
 
-We are using Jinja2 temmplating syntax, see also https://jinja.palletsprojects.com/en/2.11.x/templates/
+We are using ***Jinja2*** temmplating syntax, see also https://jinja.palletsprojects.com/en/2.11.x/templates/
 
 Video at 08:56 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
