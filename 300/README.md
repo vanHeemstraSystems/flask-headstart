@@ -159,8 +159,9 @@ touch main.css
 Now add the following to 'main.css' for styling purposes
 
 ```
-
-
-
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
 ```
 
