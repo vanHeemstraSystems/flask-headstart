@@ -32,3 +32,15 @@ touch index.html
 
 NOTE: You could also create it from within Visual Studio Code.
 
+Now inside 'app.py' replace the line 
+
+```
+return "Hello, World!"
+```
+
+by
+
+```
+return render_template('index.html')
+```
+
