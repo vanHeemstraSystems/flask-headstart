@@ -140,6 +140,8 @@ To make use of the template engine placeholders, update the 'templates/index.htm
 
 ## Static Content
 
+Video at 13:00 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
 Inside the 'static' folder, create a subfolder called 'css':
 
 ```
