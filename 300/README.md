@@ -106,16 +106,22 @@ Update the file "base.html" as follows:
         {% block head %}{% endblock %}
     </head>
     <body>
-
+        {% block body %}{% endblock %}
     </body>
 </html>
 ```
-Notice the above line:
+Notice the above lines:
 
 ```
 {% block head %}{% endblock %}
 ```
+and
+```
+{% block body %}{% endblock %}
+```
 
-This is a dynamic content placeholder
+These are dynamic content placeholders, used by the template engine.
+
+
 
 
