@@ -23,6 +23,8 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
+Video at 08:48 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
 Try the basic app.py as follows.
 
 From a terminal, run the following command from the root directory:
