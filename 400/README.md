@@ -42,6 +42,14 @@ We do so by going into the interactive mode of Python3 shell by typing:
 >>> from app import db
 ```
 
+Followed by:
+
+```
+>>> db.create_all()
+```
+
+The above should create a database.
+
 Lastly, we will have to create the test.db file in the root directory
 
 ```
