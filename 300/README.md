@@ -44,3 +44,43 @@ by
 return render_template('index.html')
 ```
 
+Update 'templates/index.html' as follows:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Document</title>
+    </head>
+    <body>
+        Hello, World! 2
+    </body>
+</html>
+```
+
+Activate the virtual environment as follows:
+
+```
+[cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
+```
+
+Then start the application:
+
+```
+(env) [cloud_user@wvanheemstra2c flask-headstart]$ python3 app.py
+```
+
+When you open your browser at localhost:5000 you should see:
+
+```
+Hello, World! 2
+```
+
+It is now showing the index.html file instead of the text "Hello, World!" by itself.
+
+
+
+
