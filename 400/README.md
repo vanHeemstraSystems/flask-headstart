@@ -32,6 +32,15 @@ class Todo(db.Model):
 ...
 ```
 
+Next we need to creatre the database based on the configuration in app.py.
+
+We do so by going into the interactive mode of Python3 shell by typing:
+
+```
+(env) python3
+>>> from app import db
+```
+
 Lastly, we will have to create the test.db file in the root directory
 
 ```
