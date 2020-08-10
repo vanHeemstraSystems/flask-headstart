@@ -18,7 +18,7 @@ In addition, add the database settings to app.py as follows:
 ```
 ...
 # database settings
-app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite:///test.db' # relative path
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db' # relative path
 db = SQLAlchemy(app)
 ...
 # database model
@@ -50,9 +50,9 @@ Followed by:
 
 The above should create a database.
 
-Lastly, we will have to create the test.db file in the root directory
+Lastly, we will see that the test.db file has been created in the root directory
 
 ```
-touch test.db
+test.db
 ```
 
