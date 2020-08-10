@@ -27,6 +27,7 @@ from flask import Flask, render_template
 Inside the 'templates' folder, create a new file called 'index.html':
 
 ```
+cd templates
 touch index.html
 ```
 
@@ -86,5 +87,35 @@ It is now showing the index.html file instead of the text "Hello, World!" by its
 
 Video at 10:04 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
+Create a new file called "base.html" inside the templates folder:
+
+```
+cd templates
+touch base.html
+```
+
+Update the file "base.html" as follows:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+
+    </body>
+</html>
+```
+Notice the above line:
+
+```
+{% block head %}{% endblock %}
+```
+
+This is a dynamic content placeholder
 
 
