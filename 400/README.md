@@ -4,11 +4,12 @@
 
 Video at 15:40 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
-Import SQLAlchemy in the top part of app.py as follows:
+Import SQLAlchemy (and datetime, which will be used in the Model later on) in the top part of app.py as follows:
 
 ```
 ...
 from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 ...
 ```
 
@@ -19,6 +20,9 @@ In addition, add the database settings to app.py as follows:
 # database settings
 app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite:///test.db' # relative path
 db = SQLAlchemy(app)
+...
+# databse model
+
 ...
 ```
 
