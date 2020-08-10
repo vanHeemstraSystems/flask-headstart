@@ -122,6 +122,8 @@ and
 
 These are dynamic content placeholders, used by the template engine.
 
+Video at 11:28 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
 To make use of the template engine placeholders, update the 'templates/index.html' file as follows:
 
 ```
