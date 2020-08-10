@@ -138,4 +138,27 @@ To make use of the template engine placeholders, update the 'templates/index.htm
 {% endblock %}
 ```
 
+## Static Content
+
+Inside the 'static' folder, create a subfolder called 'css':
+
+```
+cd static
+mkdir css
+```
+
+Inside the newly created folder 'css' create a file called 'main.css':
+
+```
+cd css
+touch main.css
+```
+
+Now add the following to 'main.css' for styling purposes
+
+```
+
+
+
+```
 
