@@ -23,3 +23,12 @@ In 'app.py' add render_template to the import statement as follows:
 from flask import Flask, render_template
 ...
 ```
+
+Inside the 'templates' folder, create a new file called 'index.html':
+
+```
+touch index.html
+```
+
+NOTE: You could also create it from within Visual Studio Code.
+
