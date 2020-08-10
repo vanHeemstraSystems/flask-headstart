@@ -122,6 +122,18 @@ and
 
 These are dynamic content placeholders, used by the template engine.
 
+To make use of the template engine placeholders, update the 'templates/index.html' file as follows:
 
+```
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+{% endblock %}
+```
 
 
