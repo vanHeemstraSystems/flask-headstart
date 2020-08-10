@@ -37,7 +37,7 @@ Next we need to creatre the database based on the configuration in app.py.
 We do so by going into the interactive mode of Python3 shell by typing:
 
 ```
-[cloud_user@wvanheemstra2c flask-headstart]$ 
+[cloud_user@wvanheemstra2c flask-headstart]$ source env/bin/activate
 (env) [cloud_user@wvanheemstra2c flask-headstart]$  python3
 >>> from app import db
 ```
