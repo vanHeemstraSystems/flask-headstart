@@ -134,7 +134,7 @@ To make use of the template engine placeholders, update the 'templates/index.htm
 {% endblock %}
 
 {% block body %}
-
+<H1>Template</H1>
 {% endblock %}
 ```
 
