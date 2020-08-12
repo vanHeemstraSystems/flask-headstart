@@ -57,10 +57,23 @@ In templates/index.html add the following below the already existing table, but 
 ```
 ...
 <form action="/" method="POST">
-
+  <input type="text" name="content" id="content">
+  <input type="submit" value="Add Task">
 </form>
 ...
 
+```
+
+Video at 24:01 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+Now add a title to the default page, templates/index.html:
+
+```
+...
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+...
 ```
 
 
