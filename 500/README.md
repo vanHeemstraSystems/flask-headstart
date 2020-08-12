@@ -33,3 +33,16 @@ Update 'templates/index.html' file as follows:
 
 ```
 
+Video at 22:39 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+Update the default route in app.py with some methods, as follows:
+
+```
+...
+@app.route('/', methods=['POST','GET'])
+def index():
+  return render_template('index.html')
+...
+
+```
+
