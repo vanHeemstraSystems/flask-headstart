@@ -78,6 +78,13 @@ Now add a title to the default page, templates/index.html:
 
 Video at 25:01 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
+***IMPORTANT***: Add the 'request' and 'redirect' to the import of app.py.
+
+```
+from flask import Flask, render_template, url_for, request, redirect
+...
+```
+
 We are going to update the default route again in app.py:
 
 ```
