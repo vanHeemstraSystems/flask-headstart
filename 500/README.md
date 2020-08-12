@@ -17,6 +17,15 @@ Update 'templates/index.html' file as follows:
       <th>Added</th>
       <th>Actions</th>
     </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="">Delete</a>
+        <br>
+        <a href="">Update</a>
+      </td>
+    </tr>
   </table>
 </div>
 {% endblock %}
