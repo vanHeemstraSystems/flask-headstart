@@ -46,3 +46,19 @@ def index():
 
 ```
 
+Now we are able to handel POST requests (for a filled in form for example) as well as GET requests (for a page for example).
+
+Let's create the form to add a new Task.
+
+In templates/index.html add the following below the already existing table, but inside the div of "contents":
+
+```
+...
+<form action="/" method="POST">
+
+</form>
+...
+
+```
+
+
