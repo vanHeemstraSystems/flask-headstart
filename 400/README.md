@@ -50,6 +50,8 @@ Followed by:
 
 The above should create a database.
 
+Video at 20:29 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
 Lastly, we will see that the test.db file has been created in the root directory
 
 ```
