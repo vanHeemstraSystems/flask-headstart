@@ -12,13 +12,14 @@
     <table>
         <tr>
             <th>Task</th>
-            <th>Added</th>
+            <th colspan="2">Added</th>
             <th>Actions</th>
         </tr>
         {% for task in tasks %}
           <tr>
               <td>{{ task.content }}</td>
               <td>{{ task.date_created.date() }}</td>
+              <td>{{ task.date_created.strftime('%X') }}</td>
               <td>
                   <a href="/delete/{{task.id}}">Delete</a>
                   <br>
