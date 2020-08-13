@@ -207,7 +207,7 @@ We need to update our templates/index.html for showing the tasks:
     <tr>
       <td>{{ task.content }}</td>
       <td>{{ task.date_created.date() }}</td>
-      <td>{{ task.date_created.time() }}</td>
+      <td>{{ task.date_created.strftime('%X') }}</td>
       <td>
         ... leave what was already here ...
       </td>
