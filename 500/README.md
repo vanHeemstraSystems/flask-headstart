@@ -235,7 +235,8 @@ body, html {
 }
 .content {
     background:rgba(255, 255, 255, 0.6);
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 20px;
     width: 400px;
 }
 
