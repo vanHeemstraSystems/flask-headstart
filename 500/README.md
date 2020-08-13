@@ -287,12 +287,28 @@ Add a route for deleting a Task in app.py as follows:
 ...
 
 @app.route('/delete/<int:id>')
-
-
-
+def delete(id):
+  task_to_delete = Todo.query.get_or_404(id)
+    
+  try:
+    db.session.delete(task_to_delete)
+    db.session.commit()
+    return redirect('/')
+  except:
+    return 'There was a problem deleting that task'
 ...
 ```
 
+In addition, update the index.html so the Delet function will be triggered:
+
+```
+...
+<td>
+  <a href="/delete/{{task.id}}">Delete</a>
+  ... leave what is already there
+</td>
+...
+```
 
 ## 540 Update
 
