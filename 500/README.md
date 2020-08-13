@@ -281,7 +281,17 @@ And center title of the table in index.html as follows:
 
 Video at 31:18 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
+Add a route for deleting a Task in app.py as follows:
 
+```
+...
+
+@app.route('/delete/<int:id>')
+
+
+
+...
+```
 
 
 ## 540 Update
