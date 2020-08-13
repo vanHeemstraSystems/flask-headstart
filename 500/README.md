@@ -13,6 +13,7 @@ Update 'templates/index.html' file as follows:
 {% block body %}
 <div class="content">
   <h1>Task Master</h1>
+  <h2>Tasks</h2>
   <table>
     <tr>
       <th>Task</th>
@@ -274,6 +275,7 @@ And center title of the table in index.html as follows:
 ```
 ...
 <h1 style="text-align: center">Task Master</h1>
+<h2 style="text-align: center">Tasks</h2>
 ...
 ```
 
@@ -320,7 +322,18 @@ Add the Update functionality to app.py as follows:
 ...
 @app.route('/update/<int:id>', methods=['GET','POST'])
 def update(id):
-  return ''
+  task = Todo.query.get_or_404(id)
+  
+  if request.method == 'POST':
+    task.content = request.form['content']
+    
+    try:
+      db.session.commit()
+      return redirect('/')
+    except:
+      return 'There was a problem updating that task.'
+  else:
+    return render_template('update.html', task=task)
 ...
 ```
 
@@ -332,4 +345,18 @@ Implement the Update function in templates/index.html as well.
   <a href="/update/{{task.id}}">Update</a>
 </td>  
 ...
+```
+
+In addition, we require a new web page for updating, called update.html
+
+```
+cd templates
+touch update.html
+```
+
+Add the following content to this update.html page:
+
+```
+
+
 ```
