@@ -239,6 +239,7 @@ body, html {
     z-index: 999;
 }
 .content {
+    border-radius: 5px;
     background:rgba(255, 255, 255, 0.6);
     margin: auto;
     margin-top: 20px;
