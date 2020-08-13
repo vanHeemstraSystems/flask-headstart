@@ -2,7 +2,7 @@
 
 # 500 Create a Basic CRUD Application
 
-## 510 Create, Read
+## 510 Create
 
 Video at 20:36 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
@@ -193,6 +193,8 @@ def index():
 ...
 ```
 
+## 520 Read
+
 Video at 29:20 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
 We need to update our templates/index.html for showing the tasks:
@@ -275,7 +277,12 @@ And center title of the table in index.html as follows:
 ...
 ```
 
-## 520 Update, Delete
+## 530 Delete
 
 Video at 31:18 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+
+
+
+## 540 Update
 
