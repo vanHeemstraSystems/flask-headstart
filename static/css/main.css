@@ -2,3 +2,18 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+#background {
+    background: url(../img/blueprint-background-11834.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+}
+.content {
+    background:rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
