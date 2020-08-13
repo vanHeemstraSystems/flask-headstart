@@ -143,3 +143,18 @@ Then, add the following to 'static/css/main.css':
 }
 ...
 ```
+
+Video at 25:34 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+We are going to update the default route again in app.py:
+
+```
+...
+@app.route('/', methods=['POST','GET'])
+def index():
+  if request.method == 'POST':
+    apss
+  else:
+    return render_template('index.html')
+...
+```
