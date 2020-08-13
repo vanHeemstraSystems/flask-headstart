@@ -17,10 +17,11 @@ Update 'templates/index.html' file as follows:
   <table>
     <tr>
       <th>Task</th>
-      <th>Added</th>
+      <th colspan="2">Added</th>
       <th>Actions</th>
     </tr>
     <tr>
+      <td></td>
       <td></td>
       <td></td>
       <td>
@@ -206,6 +207,7 @@ We need to update our templates/index.html for showing the tasks:
     <tr>
       <td>{{ task.content }}</td>
       <td>{{ task.date_created.date() }}</td>
+      <td>{{ task.date_created.time() }}</td>
       <td>
         ... leave what was already here ...
       </td>
@@ -240,7 +242,7 @@ body, html {
     background:rgba(255, 255, 255, 0.6);
     margin: auto;
     margin-top: 20px;
-    width: 400px;
+    width: 800px;
 }
 
 table, td, th {
