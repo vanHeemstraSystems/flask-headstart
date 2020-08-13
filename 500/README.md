@@ -357,6 +357,22 @@ touch update.html
 Add the following content to this update.html page:
 
 ```
+{% extends 'base.html' %}
 
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
 
+{% block body %}
+<div id="background">
+  <div class="content">
+    <h1 style="text-align: center">Task Master</h1>
+    <h2 style="text-align: center">Update Task</h2>
+    <form action="/update/{{task.id}}" method="POST">
+      <input type="text" name="content" id="content" value="{{task.content}}">
+      <input type="submit" value="Update Task">
+    </form>
+  </div>
+</div>
+{% endblock %}
 ```
