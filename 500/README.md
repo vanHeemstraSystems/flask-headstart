@@ -381,3 +381,21 @@ Add the following content to this update.html page:
 </div>
 {% endblock %}
 ```
+
+Video at 40:24 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+Finally, in case there are no tasks at all, we will show a message instead of the table, like so in index.html:
+
+```
+...
+{% if tasks|length < 1 %}
+<h4 style="text-align:center">There are no tasks, create one below.</h4>
+{% else %}
+
+ ... leave what is already there, such as the table
+ 
+{% endif %} 
+...
+
+```
+
