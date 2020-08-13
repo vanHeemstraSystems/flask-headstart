@@ -153,7 +153,7 @@ We are going to update the default route again in app.py:
 @app.route('/', methods=['POST','GET'])
 def index():
   if request.method == 'POST':
-    return "hello"
+    return "Hello, World!"
   else:
     return render_template('index.html')
 ...
