@@ -187,8 +187,24 @@ def index():
       
   else:
     tasks = Todo.query.order_by(Todo.date_created).all()
-    return render_template('index.html')
+    return render_template('index.html', tasks=tasks)
 ...
 ```
 
+Video at 29:20 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
+We need to update our templates/index.html for showing the tasks:
+
+```
+...
+  {% for task in tasks %}
+    <tr>
+      <td>{{ task.content }}</td>
+      <td>{{ task.date_created.date() }}</td>
+      <td>
+        ... leave what was already here ...
+      </td>
+    </tr>
+  {% endfor %}  
+...
+```
