@@ -20,12 +20,19 @@ class Todo(db.Model):
 @app.route('/', methods=['POST','GET'])
 def index():
     if request.method == 'POST':
-        pass
-    else:
-        pass
+        task_content = request.form['content']
+        new_task = Todo(content=task_content)
 
-    # return "Hello, World!"
-    return render_template('index.html')
+        try:
+            db.session.add(new_task)
+            db.session.commit()
+            return redirect('/')
+        except:
+            return 'There was an issue with adding your task.'
+
+    else:
+        tasks = Todo.query.order_by(Todo.date_created).all()
+        return render_template('index.html', tasks=tasks)
 
 if __name__ == "__main__":
     app.run(debug=True)    
