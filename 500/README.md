@@ -2,6 +2,8 @@
 
 # 500 Create a Basic CRUD Application
 
+## 510 Create, Read
+
 Video at 20:36 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
 Update 'templates/index.html' file as follows:
@@ -208,3 +210,69 @@ We need to update our templates/index.html for showing the tasks:
   {% endfor %}  
 ...
 ```
+
+Video at 31:14 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+We'll beautify our index page layout even more by the following added css in main.css.
+
+```
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+}
+#background {
+    background: url(../img/blueprint-background-11834.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+}
+.content {
+    background:rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;   
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+```
+
+And center title of the table in index.html as follows:
+
+```
+...
+<h1 style="text-align: center">Task Master</h1>
+...
+```
+
+## 520 Update, Delete
+
+Video at 31:18 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
