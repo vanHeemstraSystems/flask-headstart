@@ -158,3 +158,10 @@ def index():
     return render_template('index.html')
 ...
 ```
+
+If we now submit the form, the page will be returned with a message
+
+```
+Hello, World!
+```
+
