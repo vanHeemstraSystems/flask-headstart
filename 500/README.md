@@ -314,3 +314,12 @@ In addition, update the index.html so the Delet function will be triggered:
 
 Video at 34:06 youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
 
+Add the Update functionality to app.py as follows:
+
+```
+...
+@app.route('/update/<int:id>', methods=['GET','POST'])
+def update(id):
+  return ''
+...
+```
