@@ -228,6 +228,8 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
+    text-align: center;
     margin: 0;
     z-index: 999;
 }
