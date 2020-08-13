@@ -165,3 +165,20 @@ If we now submit the form, the page will be returned with a message
 Hello, World!
 ```
 
+Video at 26;27 https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
+Instead, let us put in the logic for handling the form, so in app.py do:
+
+```
+...
+@app.route('/', methods=['POST','GET'])
+def index():
+  if request.method == 'POST':
+    task_content = request.form['content']
+    
+  else:
+    return render_template('index.html')
+...
+```
+
+
