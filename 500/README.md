@@ -186,6 +186,7 @@ def index():
       return 'There was an issue with adding your task."
       
   else:
+    tasks = Todo.query.order-by(Todo.date_created).all()
     return render_template('index.html')
 ...
 ```
