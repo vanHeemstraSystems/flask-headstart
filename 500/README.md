@@ -323,3 +323,13 @@ def update(id):
   return ''
 ...
 ```
+
+Implement the Update function in templates/index.html as well.
+```
+...
+<td>
+  ... leave what was already here
+  <a href="/update/{{task.id}}">Update</a>
+</td>  
+...
+```
