@@ -175,7 +175,16 @@ Instead, let us put in the logic for handling the form, so in app.py do:
 def index():
   if request.method == 'POST':
     task_content = request.form['content']
+    new_task = Todo(content=task_content)
     
+    try:
+      db.session.add(new_task)
+      db.session.commit()
+      return redirect('/')
+      
+    except:
+      return 'There was an issue with adding your task."
+      
   else:
     return render_template('index.html')
 ...
