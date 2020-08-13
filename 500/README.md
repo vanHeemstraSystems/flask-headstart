@@ -312,3 +312,5 @@ In addition, update the index.html so the Delet function will be triggered:
 
 ## 540 Update
 
+Video at 34:06 youtube.com/watch?v=Z1RJmh_OqeA&list=PLYqVE-1VuKv63jvgb3kvY1P63EAkfACTP&index=127
+
