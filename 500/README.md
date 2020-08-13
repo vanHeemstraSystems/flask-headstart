@@ -99,4 +99,47 @@ def index():
 ...
 ```
 
+EXTRA: To set a nice background, do the following:
 
+Upload a background image to a new folder called 'img' in 'static' folder:
+
+NOTE: Background image comes from http://seekgif.com/free-image/circular-blueprint-background----11834.html
+
+```
+cd static
+mkdir img
+```
+
+Next, update 'templates/index.html' so it can support a background image:
+
+```
+...
+<div id="background">
+  <div class="content">
+     ... leave what was already there ...
+  </div>
+</div>
+...
+```
+
+Then, add the following to 'static/css/main.css':
+
+```
+...
+#background {
+    background: url(../img/blueprint-background-11834.jpeg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+}
+.content {
+    background:rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+...
+```
