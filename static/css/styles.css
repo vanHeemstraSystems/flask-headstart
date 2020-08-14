@@ -42,6 +42,13 @@
 	position: absolute;
 	top: 25%
 }
+.teaser {
+	float: left;
+	width: 98%;
+	margin-left: 2%;
+	height: 8em;
+	background: #5b79b9;
+}
 
 .teaser-1,
 .teaser-2,
