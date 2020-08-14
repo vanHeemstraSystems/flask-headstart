@@ -956,7 +956,7 @@ For readability, let us replace those actions such as 'Delete' and 'Update' with
 Change index.html as follows
 ```
 ...
-<a href=""><i class="fas fa-delete"></i></a>
-<a href=""><i class="fas fa-update"></i></a>
+<a href="/delete/{{task.id}}"><i class="fas fa-delete"></i></a>
+<a href="/update/{{task.id}}"><i class="fas fa-update"></i></a>
 ...
 ```
