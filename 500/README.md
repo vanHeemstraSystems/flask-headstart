@@ -437,7 +437,37 @@ The adjusted templates/base.html:
 
 The adjusted templates/update.html:
 ```
+{% extends 'base.html' %}
 
+{% block head %}
+<title>FOR DEMO ONLY</title>
+{% endblock %}
+
+{% block body %}
+<header class="header-main has-border is-shaded">
+  <h1 class="logo is-highlighted">Logo</h1>
+  <nav class="nav-main has-border">
+    Main Navigation
+  </nav>
+  <div class="inner"> 
+    <section class="teaser has-border">
+      <div class="foo">
+        <h1 style="text-align: center">Task Master</h1>
+        <h2 style="text-align: center">Update Task</h2>
+        <div class="form">
+            <form action="/update/{{task.id}}" method="POST">
+            <input type="text" name="content" id="content" value="{{task.content}}">
+            <input type="submit" value="Update Task">
+            </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</header>
+<div class="inner intro is-text-simulation">
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+</div>
+{% endblock %}
 ```
 
 The adjusted css/main.css:
