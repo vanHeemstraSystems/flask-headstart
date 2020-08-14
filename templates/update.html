@@ -1,20 +1,35 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Task Master</title>
+<title>FOR DEMO ONLY</title>
 {% endblock %}
 
 {% block body %}
-<div id="background">
-  <div class="content">
-    <h1 style="text-align: center">Task Master</h1>
-    <h2 style="text-align: center">Update Task</h2>
-    <div class="form">
-        <form action="/update/{{task.id}}" method="POST">
-        <input type="text" name="content" id="content" value="{{task.content}}">
-        <input type="submit" value="Update Task">
-        </form>
-    </div>
+<header class="header-main has-border is-shaded">
+  <h1 class="logo is-highlighted">Logo</h1>
+  <nav class="nav-main has-border">
+    Main Navigation
+  </nav>
+  <div class="inner">
+    <section class="teaser-1 has-border">
+    </section>  
+    <section class="teaser-2 has-border">
+      <div class="content">
+        <h1 style="text-align: center">Task Master</h1>
+        <h2 style="text-align: center">Update Task</h2>
+        <div class="form">
+            <form action="/update/{{task.id}}" method="POST">
+            <input type="text" name="content" id="content" value="{{task.content}}">
+            <input type="submit" value="Update Task">
+            </form>
+        </div>
+      </div>
+    </section>
+    <section class="teaser-3 has-border">
+    </section>
   </div>
+</header>
+<div class="inner intro is-text-simulation">
+  <p>Some text</p>
 </div>
 {% endblock %}
