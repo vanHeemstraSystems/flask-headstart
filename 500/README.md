@@ -468,6 +468,7 @@ The adjusted templates/base.html:
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/blueprint-wireframes/blueprint-wireframes.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome/css/solid.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         {% block head %}{% endblock %}
     </head>
@@ -933,6 +934,8 @@ The font fonts/redacted-script-regular.ttf
 
 The font fonts/redacted-script-regular.woff
 
+All of FontAwesome from https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself
+
 ## Public Access to Linux Academy Server
 
 Linux Academy Playground Server is reachable on port 5222, not 5000.
@@ -944,4 +947,16 @@ The change in app.py is as follows:
 if __name__ == "__main__":
     #app.run(debug=True)
     app.run(host='0.0.0.0', port=5222, debug=True) # Change port from default 5000 to 5222
+```
+
+## Replace Hyperlink text with FontAwesome icons
+
+For readability, let us replace those actions such as 'Delete' and 'Update' with a modern looking icon from FontAwesome.
+
+Change index.html as follows
+```
+...
+<a href=""><i class="fas fa-delete"></i></a>
+<a href=""><i class="fas fa-update"></i></a>
+...
 ```
