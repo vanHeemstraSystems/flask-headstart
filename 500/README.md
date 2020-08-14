@@ -680,6 +680,17 @@ The css/styles.css
 }
 ```
 
+To be able to stretch the table across the full box, we have added the following also to css/styles.css:
+```
+.teaser {
+	float: left;
+	width: 98%;
+	margin-left: 2%;
+	height: 8em;
+	background: #5b79b9;
+}
+```
+
 The css/blueprint-wireframes/blueprint-wireframe.css
 ```
 /* TOC
