@@ -468,7 +468,8 @@ The adjusted templates/base.html:
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/blueprint-wireframes/blueprint-wireframes.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome/css/solid.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome/css/fontawesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome/css/all.min.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
         {% block head %}{% endblock %}
     </head>
