@@ -399,3 +399,44 @@ Finally, in case there are no tasks at all, we will show a message instead of th
 
 ```
 
+## 550 EXTRA Styling
+
+Based on "Blueprint Wireframes" at https://github.com/willem-vanheemstrasystems/blueprint-wireframes a responsive design.
+
+We update the html, js, and css so it mimics the Blueprint Wireframe for a more enjoyable design.
+
+
+The adjusted index.html:
+```
+
+```
+
+The adjusted css/main.css:
+```
+
+```
+
+The css/styles.css
+```
+
+```
+
+The css/blueprint-wireframes/blueprint-wireframe.css
+```
+
+```
+
+The javascript js/jquery.js
+```
+
+```
+
+The javascript js/easyModal.js
+```
+
+```
+
+The javascript js/scripts.js
+```
+
+```
