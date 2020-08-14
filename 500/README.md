@@ -413,7 +413,26 @@ The adjusted templates/index.html:
 
 The adjusted templates/base.html:
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/css/blueprint-wireframes/blueprint-wireframes.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/easyModal.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
 ```
 
 The adjusted templates/update.html:
