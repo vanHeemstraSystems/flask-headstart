@@ -27,9 +27,9 @@
                   <td>{{ task.date_created.date() }}</td>
                   <td>{{ task.date_created.strftime('%X') }}</td>
                   <td>
-                      <a href="/delete/{{task.id}}"><i class="fas fa-camera"></i>Delete</a>
+                      <a href="/delete/{{task.id}}"><i class="fas fa-trash" title="Delete"></i></a>
                       <br>
-                      <a href="/update/{{task.id}}"><i class="fas fa-frog"></i>Update</a>
+                      <a href="/update/{{task.id}}"><i class="fas fa-edit" title="Edit"></i></a>
                   </td>
               </tr>
             {% endfor %}
