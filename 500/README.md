@@ -827,3 +827,22 @@ The javascript js/scripts.js
 ```
 
 ```
+
+### IMAGES: BG
+
+The image img/bg_body.jpg
+
+The image img/bg_texture.png
+
+
+### FONTS: Redacted Script, see 
+
+The font fonts/redacted-script-regular.eot
+
+The font fonts/redacted-script-regular.svg
+
+The font fonts/redacted-script-regular.ttf
+
+The font fonts/redacted-script-regular.woff
+
+
