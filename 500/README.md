@@ -406,7 +406,17 @@ Based on "Blueprint Wireframes" at https://github.com/willem-vanheemstrasystems/
 We update the html, js, and css so it mimics the Blueprint Wireframe for a more enjoyable design.
 
 
-The adjusted index.html:
+The adjusted templates/index.html:
+```
+
+```
+
+The adjusted templates/base.html:
+```
+
+```
+
+The adjusted templates/update.html:
 ```
 
 ```
