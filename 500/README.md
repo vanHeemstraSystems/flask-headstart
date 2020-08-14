@@ -922,4 +922,15 @@ The font fonts/redacted-script-regular.ttf
 
 The font fonts/redacted-script-regular.woff
 
+## Public Access to Linux Academy Server
 
+Linux Academy Playground Server is reachable on port 5222, not 5000.
+
+Hence by changing the default port number of Flask from 5000 to 5222, we can view the website publicly from a browser anywhere on the Internet.
+
+The change in app.py is as follows:
+```
+if __name__ == "__main__":
+    #app.run(debug=True)
+    app.run(host='0.0.0.0', port=5222, debug=True) # Change port from default 5000 to 5222
+```
