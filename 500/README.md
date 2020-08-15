@@ -571,9 +571,10 @@ The css/styles.css
 	top: 25%
 }
 
-.teaser-1,
-.teaser-2,
-.teaser-3 {
+.teaser-1-of-1,
+.teaser-1-of-3,
+.teaser-2-of-3,
+.teaser-3-of-3 {
 	float: left;
 	width: 32%;
 	margin-left: 2%;
@@ -581,7 +582,8 @@ The css/styles.css
 	background: #5b79b9;
 }
 
-.teaser-1 {
+.teaser-1-of-1,
+.teaser-1-of-3 {
 	margin-left: 0;
 }
 
