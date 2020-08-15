@@ -421,8 +421,8 @@ The adjusted templates/index.html:
     Main Navigation
   </nav>
   <div class="inner"> 
-    <section class="teaser has-border">
-      <div class="foo">
+    <section class="teaser-1-of-1 has-border">
+      <div class="content">
         <h1 style="text-align: center">Task Master</h1>
         <h2 style="text-align: center">Tasks</h2>
         <table>
@@ -499,8 +499,8 @@ The adjusted templates/update.html:
     Main Navigation
   </nav>
   <div class="inner"> 
-    <section class="teaser has-border">
-      <div class="foo">
+    <section class="teaser-1-of-1 has-border">
+      <div class="content">
         <h1 style="text-align: center">Task Master</h1>
         <h2 style="text-align: center">Update Task</h2>
         <div class="form">
@@ -659,16 +659,16 @@ The css/styles.css
 		margin-bottom: 2%;
 	}
 
-	.teaser-1,
-	.teaser-2,
-	.teaser-3 {
+	.teaser-1-of-3,
+	.teaser-2-of-3,
+	.teaser-3-of-3 {
 		float: none;
 		width: 100%;
 		margin-left: 0;
 		margin-bottom: 2%;
 	}
 
-	.teaser-3 {
+	.teaser-3-of-3 {
 		margin-bottom: 0;
 
 	}
@@ -686,7 +686,7 @@ The css/styles.css
 
 To be able to stretch the table across the full box, we have added the following also to css/styles.css:
 ```
-.teaser {
+.teaser-1-of-1 {
 	float: left;
 	width: 98%;
 	margin-left: 2%;
